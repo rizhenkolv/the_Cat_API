@@ -1,6 +1,23 @@
 .box {
     width: 446px;
-    margin: 30px 119px 326px 165px;  
+    margin: 30px 119px 326px 165px;
+    &__header {
+        margin-bottom:10px;
+        font-size: 44px;
+        font-weight: 500;
+    } 
+    &__text {
+        color: var();
+        margin-bottom: 60px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 29px;
+        
+        
+    } 
+    &__text--bold {
+        font-weight: 500;
+    }
 }
 
 .logo {
@@ -9,4 +26,5 @@
         display:inline-block;
         margin-bottom: 72px;
     }
+    
 }
