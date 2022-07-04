@@ -2,6 +2,21 @@
   width: 446px;
   margin: 30px 119px 326px 165px;
 }
+.box__header {
+  margin-bottom: 10px;
+  font-size: 44px;
+  font-weight: 500;
+}
+.box__text {
+  color: var();
+  margin-bottom: 60px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+}
+.box__text--bold {
+  font-weight: 500;
+}
 
 .logo {
   padding-top: 8px;
