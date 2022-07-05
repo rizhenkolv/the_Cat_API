@@ -1,11 +1,22 @@
 .main-scrolled {
-  min-width: 680px;
-  height: 840px;
+  align-items: center;
   margin-top: 30px;
   margin-right: 30px;
-  margin-left: 119px;
   margin-bottom: 30px;
-  background-color: powderblue;
+}
+.main-scrolled__box {
+  min-width: 680px;
+  height: 840px;
+  margin-left: 47px;
+  background-color: #FBE0DC;
+  background-position: center top;
+  border-radius: 20px;
+}
+.main-scrolled__img {
+  width: 775px;
+  height: 900px;
+  position: absolute;
+  top: 0;
 }
 
 /*# sourceMappingURL=main-scrolled.css.map */
