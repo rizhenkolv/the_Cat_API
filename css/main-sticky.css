@@ -90,5 +90,12 @@
   letter-spacing: 2px;
   margin-top: 20px;
 }
+.item__btn:hover {
+  background-color: var(--background-color-hover);
+}
+.item__btn-active {
+  background-color: var(--background-color-active);
+  color: var(--text-color-active);
+}
 
 /*# sourceMappingURL=main-sticky.css.map */
