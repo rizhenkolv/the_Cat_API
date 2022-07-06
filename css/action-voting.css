@@ -1,0 +1,20 @@
+.action {
+  margin: 30px 30px 18px 0px;
+}
+
+.search {
+  display: flex;
+}
+.search__field {
+  width: 470px;
+  padding: 15px 220px 15px 20px;
+  border: none;
+  background-color: var(--background-color-secondary);
+  border-radius: 20px;
+}
+.search__field::placeholder {
+  color: var(--text-color-secondary);
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=action-voting.css.map */
