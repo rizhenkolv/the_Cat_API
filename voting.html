@@ -57,42 +57,50 @@
         
                 <div class="action voting">
                     <div class="search">
-                        <input class="search__field" placeholder="Search for breeds by name">
-                            <button class="search-btn"></button>
-                        </input>
+                        <div class="search__inner">
+                            <input class="search__input" placeholder="Search for breeds by name">
+                            <div class="search__icon" ref="icon"></div>
+                        </div>
+                        
                         <div class="emoji">
-                            <a href="#" class="emoji-like">
-                                <img src="/img/img_voting/like.svg" alt="">
+                            <a href="#" class="emoji-link">
+                                <div class="emoji-link__icon-like" ref="icon"></div>
                             </a>
-                            <a href="#" class="emoji-favourites">
-                                <img src="/img/img_voting/favourite.svg" alt="">
+                            <a href="#" class="emoji-link">
+                                <div class="emoji-link__icon-favour" ref="icon"></div>
                             </a>
-                            <a href="#" class="emoji-dislike">
-                                <img src="/img/img_voting/dislike.svg" alt="">
+                            <a href="#" class="emoji-link">
+                                <div class="emoji-link__icon-dislike" ref="icon"></div>
                             </a>
                         </div>
                     </div>
 
-                    <div class="action-box voting">
-                        <button class="back-btn">
-                            <img src="/img/img_voting/arrow_back.svg" alt="" class="icon">
-                        </button>
-                        <button class="action-btn">Voting</button>
-                        <img src="/img/img_voting/img_example.jpg" alt="" class="box-img">
-                        <div class="box__emoji">
-                            <button class="action-box__emoji-like">
-                                <img src="/img/img_voting/like.svg" alt="">
+                    <div class="action__box voting">
+                        <a href="index.html" class="action__btn-back"></a>
+                        <!-- <button class="action__btn-back"></button> -->
+                        <a href="" class="action__btn">Voting</a>
+                        <!-- <button class="action__btn">Voting</button> -->
+                        <img src="/img/img_voting/img_example.jpg" alt="" class="action__box-img">
+                        <div class="emoji-box">
+                            <button class="emoji-box__like">  
                             </button>
-                            <button class="action-box__emoji-favourite">
-                                <img src="/img/img_voting/favourite.svg" alt="">
+                            <button class="emoji-box__favourite">
                             </button>
-                            <button class="action-box__emoji-dislike">
-                                <img src="/img/img_voting/dislike.svg" alt="">
+                            <button class="emoji-box__dislike">
                             </button>
                         </div>
-                        <ul class="action-box__list">
-                            <li class="action-box__list-user">js code</li>
-                        </ul>
+                        <div class="users-box">
+                            <div class="users-box__user">
+                                <div class="users-box__user-time">12:45</div>
+                                <div class="users-box__user-input"></div>
+                                <div class="users-box__user-reaction">;)</div>
+                            </div>
+                            <div class="users-box__user">
+                                <div class="users-box__user-time">12:45</div>
+                                <div class="users-box__user-input"></div>
+                                <div class="users-box__user-reaction">:)</div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
