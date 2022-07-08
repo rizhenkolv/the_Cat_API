@@ -1,0 +1,218 @@
+select {
+  all: unset;
+}
+
+.container-action {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  width: 50px;
+}
+
+.action {
+  margin: 30px 30px 18px 0px;
+}
+.action__box {
+  width: 680px;
+  background-color: var(--background-color-secondary);
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+}
+.action__btn {
+  display: inline-block;
+  width: 86px;
+  height: 30px;
+  background-color: var(--background-color-active);
+  color: var(--text-color-active);
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  padding: 5px 30px;
+}
+.action__btn-back {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: var(--background-color-hover);
+  background-image: url(/img/img_voting/arrow_back.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  border: none;
+}
+.action__btn-back:hover {
+  background-color: var(--background-color-active);
+  background-image: url(/img/img_voting/arrow_back-hover.svg);
+}
+.action__box-img {
+  position: relative;
+}
+.action__select {
+  position: relative;
+}
+.action__select-breeds {
+  width: 226px;
+  height: 40px;
+  background-color: var(--background-color);
+  border: none;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-color-secondary);
+  border-radius: 10px;
+  align-items: center;
+  padding-left: 10px;
+}
+.action__select-limits {
+  width: 91px;
+  height: 40px;
+  background-color: var(--background-color);
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-color-secondary);
+  align-items: center;
+  padding-left: 10px;
+}
+
+.search {
+  display: flex;
+  margin-bottom: 10px;
+}
+.search__inner {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex: 1;
+  width: 470px;
+  height: 60px;
+  border: none;
+  background-color: var(--background-color-secondary);
+  border-radius: 20px;
+  margin-right: 10px;
+}
+.search__input {
+  width: 430px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  border: none;
+  background-color: var(--background-color-secondary);
+  border-radius: 20px;
+}
+.search__input::placeholder {
+  color: var(--text-color-secondary);
+  font-size: 20px;
+}
+.search__icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--background-color-hover);
+  border-radius: 10px;
+  background-image: url(/img/img_voting/search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+}
+.search__icon:hover {
+  background-color: var(--background-color-active);
+  background-image: url(/img/img_voting/search_white.svg);
+}
+
+.emoji-link {
+  display: inline-block;
+  background-color: var(--background-color-secondary);
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  text-align: center;
+  align-items: center;
+}
+.emoji-link__icon-like {
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  background-image: url(/img/img_voting/like.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 15px 15px;
+}
+.emoji-link__icon-favour {
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  background-image: url(/img/img_voting/favourite.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 15px 15px;
+}
+.emoji-link__icon-dislike {
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  background-image: url(/img/img_voting/dislike.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 15px 15px;
+}
+
+.emoji-link + .emoji-link {
+  margin-left: 10px;
+}
+
+.emoji-link:hover {
+  background-color: var(--background-color-hover);
+}
+
+.emoji-link:active {
+  background-color: var(--background-color-active);
+}
+
+.emoji-link__icon-like:active {
+  background-image: url(/img/img_voting/like_active.svg);
+}
+.emoji-link__icon-favour:active {
+  background-image: url(/img/img_voting/favourite_active.svg);
+}
+.emoji-link__icon-dislike:active {
+  background-image: url(/img/img_voting/dislike__active.svg);
+}
+
+.sort-ba {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: var(--background-color);
+  background-image: url(/img/img__breeds/sort_ba.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sort-ba:hover {
+  width: 36px;
+  height: 36px;
+  border: 2px solid #FBE0DC;
+  background-image: url(/img/img__breeds/sort_ba_hover.svg);
+}
+
+.sort-ab {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: var(--background-color);
+  background-image: url(/img/img__breeds/sort_ab.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*# sourceMappingURL=action-breeds.css.map */
