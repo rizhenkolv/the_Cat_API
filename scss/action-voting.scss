@@ -13,13 +13,14 @@
         background-color: var(--background-color-secondary);
         border-radius: 20px;
         padding: 20px;
-        position:relative;
     }
     &__box-img {
         width: 640px;
+        // max-height: 360px;
         // background-color: var(--background-color-secondary);
         border-radius: 20px;
         position:relative;
+        margin-bottom: 52px;
     }
     &__btn {
         display:inline-block;
@@ -164,7 +165,7 @@
 }
 .emoji-box {
     position:absolute;
-    top: 412px;
+    top: 67%;
     right: 34%;
     display:flex;
     justify-content: space-between;
@@ -221,7 +222,6 @@
 .users-box {
     justify-content: space-between;
     width: 640px;
-    margin-top: 52px;
     &__user {
         width: 640px;
         height: 60px;
