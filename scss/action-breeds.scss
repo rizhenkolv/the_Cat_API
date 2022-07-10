@@ -2,19 +2,18 @@ select {
     all:unset;
 }
 
-.container-action {
+.container-actions {
     display:flex;
-    justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    width: 50px;
-
+    height: 50px;
+    margin-bottom: 20px;
 }
 
 .action {
     margin: 30px 30px 18px 0px;
     &__box {
-        width: 680px;
+        width: 640px;
         background-color: var(--background-color-secondary);
         border-radius: 20px;
         padding: 20px;
@@ -33,9 +32,10 @@ select {
         font-weight: 500;
         border-radius: 10px;
         border:none;
-        margin-bottom: 20px;
         margin-left: 10px;
+        margin-right: 10px;
         padding: 5px 30px;
+
     }
     &__btn-back{
         display:inline-block;
@@ -69,6 +69,10 @@ select {
         border-radius: 10px;
         align-items: center;
         padding-left:10px;
+        margin-right: 10px;
+    }
+    &__select-breeds:hover {
+        border: 2px solid #FBE0DC;
     }
     &__select-limits {
         width: 91px;
@@ -81,6 +85,7 @@ select {
         color: var(--text-color-secondary);
         align-items: center;
         padding-left:10px;
+        margin-right: 10px;
     }
     
 }
@@ -197,14 +202,13 @@ select {
     background-image: url(/img/img__breeds/sort_ba.svg);
     background-repeat: no-repeat;
     background-position: center;
+    margin-right: 10px;
 }
 .sort-ba:hover {
     width: 36px;
     height: 36px;
     border: 2px solid #FBE0DC;
     background-image: url(/img/img__breeds/sort_ba_hover.svg);
-
-
 }
 .sort-ab {
     display:inline-block;
@@ -215,6 +219,12 @@ select {
     background-image: url(/img/img__breeds/sort_ab.svg);
     background-repeat: no-repeat;
     background-position: center;
+}
+.sort-ab:hover {
+    width: 36px;
+    height: 36px;
+    border: 2px solid #FBE0DC;
+    background-image: url(/img/img__breeds/sort_ab_hover.svg);
 }
 
 
