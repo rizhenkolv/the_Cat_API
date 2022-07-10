@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/scss/_normalize.scss">
     <link rel="stylesheet" href="/css/slick.css">
     <link rel="stylesheet" href="/css/style.css">
     
@@ -76,11 +75,14 @@
                     </div>
 
                     <div class="action__box voting">
-                        <a href="index.html" class="action__btn-back"></a>
-                        <!-- <button class="action__btn-back"></button> -->
-                        <a href="" class="action__btn">Voting</a>
-                        <!-- <button class="action__btn">Voting</button> -->
-                        <img src="/img/img_voting/img_example.jpg" alt="" class="action__box-img">
+                        <div class="container-actions">
+                            <a href="index.html" class="action__btn-back"></a>
+                            <a href="" class="action__btn">Voting</a>
+                        </div> 
+                        <div class="action__box-img">
+                             <!-- <img src="/img/img_voting/img_example.jpg" alt="" class="img-random"> -->
+                        </div>   
+                           
                         <div class="emoji-box">
                             <button class="emoji-box__like">  
                             </button>
@@ -110,7 +112,8 @@
     </div>
     
  
-    <script src="/js/main.js"></script>
-    <script src="/js/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/vouting.js"></script>
+   
 </body>
 </html>
