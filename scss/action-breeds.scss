@@ -44,7 +44,7 @@ select {
         width: 40px;
         height: 40px;
         background-color: var(--background-color-hover);
-        background-image:url(/img/img_voting/arrow_back.svg);
+        background-image:url(../img/img_voting/arrow_back.svg);
         background-repeat: no-repeat;
         background-position: center;
         border-radius: 10px;
@@ -52,7 +52,7 @@ select {
     }
     &__btn-back:hover{
         background-color: var(--background-color-active);
-        background-image:url(/img/img_voting/arrow_back-hover.svg);
+        background-image:url(../img/img_voting/arrow_back-hover.svg);
     }
     &__box-img {
         position: relative;
@@ -127,14 +127,14 @@ select {
         height: 40px;
         background-color: var(--background-color-hover);
         border-radius: 10px;
-        background-image: url(/img/img_voting/search.svg);
+        background-image: url(../img/img_voting/search.svg);
         background-repeat: no-repeat;
         background-position: center;
         margin-right: 10px;
     }
     &__icon:hover {
         background-color: var(--background-color-active);
-        background-image: url(/img/img_voting/search_white.svg);
+        background-image: url(../img/img_voting/search_white.svg);
     }
 }
 
@@ -151,7 +151,7 @@ select {
         width: 30px;
         height: 30px;
         align-items: center;
-        background-image: url(/img/img_voting/like.svg);
+        background-image: url(../img/img_voting/like.svg);
         background-repeat: no-repeat;
         background-position: center;
         margin: 15px 15px;
@@ -160,7 +160,7 @@ select {
         width: 30px;
         height: 30px;
         align-items: center;
-        background-image: url(/img/img_voting/favourite.svg);
+        background-image: url(../img/img_voting/favourite.svg);
         background-repeat: no-repeat;
         background-position: center;
         margin: 15px 15px;
@@ -169,7 +169,7 @@ select {
         width: 30px;
         height: 30px;
         align-items: center;
-        background-image: url(/img/img_voting/dislike.svg);
+        background-image: url(../img/img_voting/dislike.svg);
         background-repeat: no-repeat;
         background-position: center;
         margin: 15px 15px;
@@ -186,13 +186,13 @@ select {
 }
 .emoji-link {
     &__icon-like:active {
-        background-image: url(/img/img_voting/like_active.svg);
+        background-image: url(../img/img_voting/like_active.svg);
     }
     &__icon-favour:active {
-        background-image: url(/img/img_voting/favourite_active.svg);
+        background-image: url(../img/img_voting/favourite_active.svg);
     }
     &__icon-dislike:active {
-        background-image: url(/img/img_voting/dislike__active.svg);
+        background-image: url(../img/img_voting/dislike__active.svg);
     }
 }
 .sort-ba {
@@ -201,7 +201,7 @@ select {
     height: 40px;
     border-radius: 10px;
     background-color: var(--background-color);
-    background-image: url(/img/img__breeds/sort_ba.svg);
+    background-image: url(../img/img__breeds/sort_ba.svg);
     background-repeat: no-repeat;
     background-position: center;
     margin-right: 10px;
@@ -210,7 +210,7 @@ select {
     width: 36px;
     height: 36px;
     border: 2px solid #FBE0DC;
-    background-image: url(/img/img__breeds/sort_ba_hover.svg);
+    background-image: url(../img/img__breeds/sort_ba_hover.svg);
 }
 .sort-ab {
     display:inline-block;
@@ -218,7 +218,7 @@ select {
     height: 40px;
     border-radius: 10px;
     background-color: var(--background-color);
-    background-image: url(/img/img__breeds/sort_ab.svg);
+    background-image: url(../img/img__breeds/sort_ab.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -226,7 +226,7 @@ select {
     width: 36px;
     height: 36px;
     border: 2px solid #FBE0DC;
-    background-image: url(/img/img__breeds/sort_ab_hover.svg);
+    background-image: url(../img/img__breeds/sort_ab_hover.svg);
 }
 
 
