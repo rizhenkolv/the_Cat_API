@@ -42,7 +42,7 @@
   width: 40px;
   height: 40px;
   background-color: var(--background-color-hover);
-  background-image: url(/img/img_voting/arrow_back.svg);
+  background-image: url(../img/img_voting/arrow_back.svg);
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 10px;
@@ -50,7 +50,7 @@
 }
 .action__btn-back:hover {
   background-color: var(--background-color-active);
-  background-image: url(/img/img_voting/arrow_back-hover.svg);
+  background-image: url(../img/img_voting/arrow_back-hover.svg);
 }
 
 .img-random {
@@ -92,14 +92,14 @@
   height: 40px;
   background-color: var(--background-color-hover);
   border-radius: 10px;
-  background-image: url(/img/img_voting/search.svg);
+  background-image: url(../img/img_voting/search.svg);
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 10px;
 }
 .search__icon:hover {
   background-color: var(--background-color-active);
-  background-image: url(/img/img_voting/search_white.svg);
+  background-image: url(../img/img_voting/search_white.svg);
 }
 
 .emoji-link {
@@ -115,7 +115,7 @@
   width: 30px;
   height: 30px;
   align-items: center;
-  background-image: url(/img/img_voting/like.svg);
+  background-image: url(../img/img_voting/like.svg);
   background-repeat: no-repeat;
   background-position: center;
   margin: 15px 15px;
@@ -124,7 +124,7 @@
   width: 30px;
   height: 30px;
   align-items: center;
-  background-image: url(/img/img_voting/favourite.svg);
+  background-image: url(../img/img_voting/favourite.svg);
   background-repeat: no-repeat;
   background-position: center;
   margin: 15px 15px;
@@ -133,7 +133,7 @@
   width: 30px;
   height: 30px;
   align-items: center;
-  background-image: url(/img/img_voting/dislike.svg);
+  background-image: url(../img/img_voting/dislike.svg);
   background-repeat: no-repeat;
   background-position: center;
   margin: 15px 15px;
@@ -152,13 +152,13 @@
 }
 
 .emoji-link__icon-like:active {
-  background-image: url(/img/img_voting/like_active.svg);
+  background-image: url(../img/img_voting/like_active.svg);
 }
 .emoji-link__icon-favour:active {
-  background-image: url(/img/img_voting/favourite_active.svg);
+  background-image: url(../img/img_voting/favourite_active.svg);
 }
 .emoji-link__icon-dislike:active {
-  background-image: url(/img/img_voting/dislike__active.svg);
+  background-image: url(../img/img_voting/dislike__active.svg);
 }
 
 .emoji-box {
@@ -178,7 +178,7 @@
   width: 80px;
   height: 80px;
   background-color: var(--background-color-emoji-like);
-  background-image: url(/img/img_voting/like_active.svg);
+  background-image: url(../img/img_voting/like_active.svg);
   background-repeat: no-repeat;
   background-position: center;
   border: none;
@@ -187,26 +187,26 @@
 }
 .emoji-box__like:hover {
   background-color: var(--background-color-emoji-like-light);
-  background-image: url(/img/img_voting/like.svg);
+  background-image: url(../img/img_voting/like.svg);
 }
 .emoji-box__favourite {
   width: 80px;
   height: 80px;
   background-color: var(--background-color-emoji-favour);
-  background-image: url(/img/img_voting/favourite_active.svg);
+  background-image: url(../img/img_voting/favourite_active.svg);
   background-repeat: no-repeat;
   background-position: center;
   border: none;
 }
 .emoji-box__favourite:hover {
   background-color: var(--background-color-emoji-favour-light);
-  background-image: url(/img/img_voting/favourite.svg);
+  background-image: url(../img/img_voting/favourite.svg);
 }
 .emoji-box__dislike {
   width: 80px;
   height: 80px;
   background-color: var(--background-color-emoji-dislike);
-  background-image: url(/img/img_voting/dislike__active.svg);
+  background-image: url(../img/img_voting/dislike__active.svg);
   background-repeat: no-repeat;
   background-position: center;
   border: none;
@@ -215,7 +215,7 @@
 }
 .emoji-box__dislike:hover {
   background-color: var(--background-color-emoji-dislike-light);
-  background-image: url(/img/img_voting/dislike.svg);
+  background-image: url(../img/img_voting/dislike.svg);
 }
 
 .users-box {
