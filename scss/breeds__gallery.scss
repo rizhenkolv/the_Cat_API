@@ -26,31 +26,31 @@
     &__btn.prev {
         position: absolute;
         left: 25%;
-        background-image: url('./img/img__breeds/prev_default.svg');
+        background-image: url('../img/img__breeds/prev_default.svg');
         background-position: 30%;
         background-repeat: no-repeat;
         margin-right:40px;
         padding: 12px 30px 12px 56px;
     }
     &__btn.prev:hover {
-        background-image: url('./img/img__breeds/prev_hover.svg');   
+        background-image: url('../img/img__breeds/prev_hover.svg');   
     }
     &__btn.prev:active {
-        background-image: url('./img/img__breeds/prev_activ.svg');   
+        background-image: url('../img/img__breeds/prev_activ.svg');   
     }
     &__btn.next {
         position: absolute;
         left: 50%;
-        background-image: url('./img/img__breeds/next_default.svg');
+        background-image: url('../img/img__breeds/next_default.svg');
         background-position: 66%;
         background-repeat: no-repeat;
         padding: 12px 56px 12px 30px;
     }
     &__btn.next:hover {
-        background-image: url('./img/img__breeds/next_hover.svg');   
+        background-image: url('../img/img__breeds/next_hover.svg');   
     }
     &__btn.next:active {
-        background-image: url('./img/img__breeds/next_active.svg');   
+        background-image: url('../img/img__breeds/next_active.svg');   
     }
 
 }
