@@ -1,0 +1,58 @@
+@use '../components/breeds__gallery.scss';
+
+
+select {
+    all:unset;
+}
+
+.action__upload {
+        position: absolute;
+        right: 20px;
+        display:inline-block;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 2px;
+        font-weight: 500;
+        text-transform: uppercase;
+        border-radius: 10px;
+        background-color: var(--background-color-hover);
+        background-image: url(../../img/img__gallery/upload_default.svg);
+        color: var(--text-color-accent);
+        background-repeat: no-repeat;
+        background-position: 23%;
+        padding: 12px 30px 12px 56px;
+        &:hover {
+            background-color: var(--background-color-active);
+        background-image: url(../img/img__gallery/upload__hover.svg);
+        color: var(--text-color-active);
+        }
+}
+.sort-box {
+    margin-top: 25px;
+    background-color: var(--background-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 8px;
+    column-gap: 20px;
+    padding: 10px 20px 20px;
+    border-radius: 20px;
+    
+    &__select{
+        background-color: var(--background-color-secondary);
+        width: 280px;
+        height: 24px;
+        padding-left: 10px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-radius: 10px;
+    }
+    &__label {
+        font-size: 10px;
+        line-height: 18px;
+        color: var(--text-color-secondary);
+        text-transform: uppercase;
+        padding-left: 10px;
+    }
+}
+
