@@ -1,0 +1,101 @@
+.gallery__btn {
+  position: absolute;
+  left: 33%;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background-color: var(--background-color);
+  color: var(--text-color-secondary);
+  background-repeat: no-repeat;
+}
+.gallery__btn:hover {
+  color: var(--text-color-accent);
+  background-color: var(--background-color-hover);
+}
+.gallery__btn:active {
+  color: var(--text-color-active);
+  background-color: var(--background-color-active);
+}
+.gallery__btn.prev {
+  position: absolute;
+  left: 25%;
+  background-image: url("../img/img__breeds/prev_default.svg");
+  background-position: 30%;
+  background-repeat: no-repeat;
+  margin-right: 40px;
+  padding: 12px 30px 12px 56px;
+}
+.gallery__btn.prev:hover {
+  background-image: url("../img/img__breeds/prev_hover.svg");
+}
+.gallery__btn.prev:active {
+  background-image: url("../img/img__breeds/prev_activ.svg");
+}
+.gallery__btn.next {
+  position: absolute;
+  left: 50%;
+  background-image: url("../img/img__breeds/next_default.svg");
+  background-position: 66%;
+  background-repeat: no-repeat;
+  padding: 12px 56px 12px 30px;
+}
+.gallery__btn.next:hover {
+  background-image: url("../img/img__breeds/next_hover.svg");
+}
+.gallery__btn.next:active {
+  background-image: url("../img/img__breeds/next_active.svg");
+}
+
+.gallery__list,
+.gallery__list--reverse {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 140px);
+  gap: 20px;
+  grid-auto-flow: dense;
+  list-style: none;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+figure {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+figure > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  place-items: center;
+  border-radius: 10px;
+}
+
+.gallery__list > li:first-child {
+  grid-row: span 2;
+}
+
+.gallery__list > li:nth-child(4n) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.gallery__list > li:nth-child(8n) {
+  grid-row: span 2;
+}
+
+.gallery__list--reverse > li:nth-child(3n) {
+  grid-row: span 2;
+}
+
+.gallery__list--reverse > li:nth-child(4n) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/*# sourceMappingURL=breeds__gallery.css.map */
