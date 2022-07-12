@@ -1,0 +1,235 @@
+@use '../components/breeds__gallery.scss';
+
+select {
+    all:unset;
+}
+
+.container-actions {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.action {
+    margin: 30px 30px 18px 0px;
+    &__box {
+        width: 640px;
+        background-color: var(--background-color-secondary);
+        border-radius: 20px;
+        padding: 20px;
+        position:relative;
+    }
+    &__btn {
+        display:inline-block;
+        width: 86px;
+        height: 30px;
+        background-color: var(--background-color-active);
+        color: var(--text-color-active);
+        text-transform: uppercase;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 2px;
+        font-weight: 500;
+        border-radius: 10px;
+        border:none;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 5px 30px;
+
+    }
+    &__btn-back{
+        display:inline-block;
+        width: 40px;
+        height: 40px;
+        background-color: var(--background-color-hover);
+        background-image:url(../../img/img__voting/arrow_back.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 10px;
+        border: none;
+    }
+    &__btn-back:hover{
+        background-color: var(--background-color-active);
+        background-image:url(../../img/img__voting/arrow_back-hover.svg);
+    }
+    &__box-img {
+        position: relative;
+    }
+    &__select {
+        position: relative;
+    }
+    &__select-breeds {
+        width: 226px;
+        height: 40px;
+        background-color: var(--background-color);
+        border:none;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--text-color-secondary);
+        border-radius: 10px;
+        align-items: center;
+        padding-left:10px;
+        margin-right: 10px;
+    }
+    &__select-breeds:hover {
+        border: 2px solid #FBE0DC;
+    }
+    &__select-limits {
+        width: 91px;
+        height: 40px;
+        background-color: var(--background-color);
+        border:none;
+        border-radius:10px;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--text-color-secondary);
+        align-items: center;
+        padding-left:10px;
+        margin-right: 10px;
+    }
+    
+}
+
+.search {
+        display: flex;
+        margin-bottom: 10px;
+    &__inner{
+        display: flex;
+        align-items: center;
+        position: relative;
+        flex:1;
+        width: 470px;
+        height: 60px;
+        border: none;
+        background-color: var(--background-color-secondary);
+        border-radius:20px;
+        margin-right: 10px;
+
+    }
+    &__input {
+        width: 430px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        border: none;
+        background-color: var(--background-color-secondary);
+        border-radius:20px;
+        
+    }
+    &__input::placeholder{
+       color: var(--text-color-secondary);
+       font-size: 20px; 
+    }
+    &__icon {
+        width: 40px;
+        height: 40px;
+        background-color: var(--background-color-hover);
+        border-radius: 10px;
+        background-image: url(../../img/img__voting/search.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 10px;
+    }
+    &__icon:hover {
+        background-color: var(--background-color-active);
+        background-image: url(../../img/img__voting/search_white.svg);
+    }
+}
+
+.emoji-link {
+    display:inline-block;
+    background-color: var(--background-color-secondary);
+    ;width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    
+    &__icon-like {
+        width: 30px;
+        height: 30px;
+        align-items: center;
+        background-image: url(../../img/img__voting/like.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 15px 15px;
+    }
+    &__icon-favour {
+        width: 30px;
+        height: 30px;
+        align-items: center;
+        background-image: url(../../img/img__voting/favourite.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 15px 15px;
+    }
+    &__icon-dislike {
+        width: 30px;
+        height: 30px;
+        align-items: center;
+        background-image: url(../../img/img__voting/dislike.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 15px 15px;
+    }
+}
+.emoji-link + .emoji-link {
+    margin-left: 10px;
+}
+.emoji-link:hover {
+    background-color: var(--background-color-hover);
+}
+.emoji-link:active {
+    background-color: var(--background-color-active);
+}
+.emoji-link {
+    &__icon-like:active {
+        background-image: url(../../img/img__voting/like_active.svg);
+    }
+    &__icon-favour:active {
+        background-image: url(../../img/img__voting/favourite_active.svg);
+    }
+    &__icon-dislike:active {
+        background-image: url(../../img/img__voting/dislike__active.svg);
+    }
+}
+.sort-ba {
+    display:inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--background-color);
+    background-image: url(../../img/img__breeds/sort_ba.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
+}
+.sort-ba:hover {
+    width: 36px;
+    height: 36px;
+    border: 2px solid #FBE0DC;
+    background-image: url(../../img/img__breeds/sort_ba_hover.svg);
+}
+.sort-ab {
+    display:inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--background-color);
+    background-image: url(../../img/img__breeds/sort_ab.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sort-ab:hover {
+    width: 36px;
+    height: 36px;
+    border: 2px solid #FBE0DC;
+    background-image: url(../../img/img__breeds/sort_ab_hover.svg);
+}
+
+
+
+
+
