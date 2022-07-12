@@ -1,38 +1,3 @@
-html {
-  box-sizing: border-box;
-  font-size: 100%;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: var(--font-main);
-  background-color: var(--background-color);
-  color: var(--text-color-main);
-}
-
-.container {
-  max-width: 1440px;
-}
-
-button {
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2, h3 {
-  font-weight: 500;
-  margin-top: 0;
-}
-
-p {
-  margin-top: 0%;
-}
-
-a, a:visited, a:active {
-  text-decoration: none;
-}
-
 :root {
   --background-color:#F8F8F7;
   --background-color-secondary:#FFFFFF;
@@ -48,14 +13,46 @@ a, a:visited, a:active {
   --background-color-emoji-favour-light: rgba(255, 134, 142, 0.3);
   --background-color-emoji-dislike:#FFD280;
   --background-color-emoji-dislike-light:rgba(255, 210, 128, 0.3);
+  --font-main:"Jost", sans-serif;
 }
 
-:root {
-  --font-main:"Jost", sans-serif;
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+  background-color: var(--background-color);
+  color: var(--text-color-main);
+}
+
+h1, h2, h3 {
+  font-weight: 500;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0%;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
 }
 
 .main-page {
   display: flex;
+}
+
+.container {
+  max-width: 1440px;
+}
+
+button {
+  margin: 0;
+  padding: 0;
 }
 
 .box {
@@ -195,6 +192,7 @@ a, a:visited, a:active {
   background-color: var(--background-color-secondary);
   border-radius: 20px;
   padding: 20px;
+  position: relative;
 }
 .action__box-img {
   width: 640px;
@@ -273,14 +271,14 @@ a, a:visited, a:active {
   height: 40px;
   background-color: var(--background-color-hover);
   border-radius: 10px;
-  background-image: url(../img/img_voting/search.svg);
+  background-image: url(../../img/img__voting/search.svg);
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 10px;
 }
 .search__icon:hover {
   background-color: var(--background-color-active);
-  background-image: url(../img/img_voting/search_white.svg);
+  background-image: url(../../img/img__voting/search_white.svg);
 }
 
 .emoji-link {
@@ -296,7 +294,7 @@ a, a:visited, a:active {
   width: 30px;
   height: 30px;
   align-items: center;
-  background-image: url(../img/img_voting/like.svg);
+  background-image: url(../../img/img__voting/like.svg);
   background-repeat: no-repeat;
   background-position: center;
   margin: 15px 15px;
@@ -343,9 +341,7 @@ a, a:visited, a:active {
 }
 
 .emoji-box {
-  position: absolute;
-  top: 67%;
-  right: 34%;
+  position: relative;
   display: flex;
   justify-content: space-between;
   width: 248px;
@@ -353,13 +349,16 @@ a, a:visited, a:active {
   border-radius: 20px;
   border: 4px solid #FFFFFF;
   background-color: var(--background-color-secondary);
+  margin: 0 auto;
   margin-bottom: 14px;
+  margin-top: -105px;
+  z-index: 10;
 }
 .emoji-box__like {
   width: 80px;
   height: 80px;
   background-color: var(--background-color-emoji-like);
-  background-image: url(../img/img_voting/like_active.svg);
+  background-image: url(../../img/img__voting/like_active.svg);
   background-repeat: no-repeat;
   background-position: center;
   border: none;
@@ -368,26 +367,26 @@ a, a:visited, a:active {
 }
 .emoji-box__like:hover {
   background-color: var(--background-color-emoji-like-light);
-  background-image: url(../img/img_voting/like.svg);
+  background-image: url(../../img/img__voting/like.svg);
 }
 .emoji-box__favourite {
   width: 80px;
   height: 80px;
   background-color: var(--background-color-emoji-favour);
-  background-image: url(../img/img_voting/favourite_active.svg);
+  background-image: url(../../img/img__voting/favourite_active.svg);
   background-repeat: no-repeat;
   background-position: center;
   border: none;
 }
 .emoji-box__favourite:hover {
   background-color: var(--background-color-emoji-favour-light);
-  background-image: url(../img/img_voting/favourite.svg);
+  background-image: url(../../img/img__voting/favourite.svg);
 }
 .emoji-box__dislike {
   width: 80px;
   height: 80px;
   background-color: var(--background-color-emoji-dislike);
-  background-image: url(../img/img_voting/dislike__active.svg);
+  background-image: url(../../img/img__voting/dislike__active.svg);
   background-repeat: no-repeat;
   background-position: center;
   border: none;
@@ -396,7 +395,7 @@ a, a:visited, a:active {
 }
 .emoji-box__dislike:hover {
   background-color: var(--background-color-emoji-dislike-light);
-  background-image: url(../img/img_voting/dislike.svg);
+  background-image: url(../../img/img__voting/dislike.svg);
 }
 
 .users-box {
@@ -581,7 +580,7 @@ select {
   width: 40px;
   height: 40px;
   background-color: var(--background-color-hover);
-  background-image: url(../img/img_voting/arrow_back.svg);
+  background-image: url(../../img/img__voting/arrow_back.svg);
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 10px;
@@ -589,7 +588,7 @@ select {
 }
 .action__btn-back:hover {
   background-color: var(--background-color-active);
-  background-image: url(../img/img_voting/arrow_back-hover.svg);
+  background-image: url(../../img/img__voting/arrow_back-hover.svg);
 }
 .action__box-img {
   position: relative;
@@ -661,14 +660,14 @@ select {
   height: 40px;
   background-color: var(--background-color-hover);
   border-radius: 10px;
-  background-image: url(../img/img_voting/search.svg);
+  background-image: url(../../img/img__voting/search.svg);
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 10px;
 }
 .search__icon:hover {
   background-color: var(--background-color-active);
-  background-image: url(../img/img_voting/search_white.svg);
+  background-image: url(../../img/img__voting/search_white.svg);
 }
 
 .emoji-link {
@@ -684,7 +683,7 @@ select {
   width: 30px;
   height: 30px;
   align-items: center;
-  background-image: url(../img/img_voting/like.svg);
+  background-image: url(../../img/img__voting/like.svg);
   background-repeat: no-repeat;
   background-position: center;
   margin: 15px 15px;
@@ -693,7 +692,7 @@ select {
   width: 30px;
   height: 30px;
   align-items: center;
-  background-image: url(../img/img_voting/favourite.svg);
+  background-image: url(../../img/img__voting/favourite.svg);
   background-repeat: no-repeat;
   background-position: center;
   margin: 15px 15px;
@@ -702,7 +701,7 @@ select {
   width: 30px;
   height: 30px;
   align-items: center;
-  background-image: url(../img/img_voting/dislike.svg);
+  background-image: url(../../img/img__voting/dislike.svg);
   background-repeat: no-repeat;
   background-position: center;
   margin: 15px 15px;
@@ -721,13 +720,13 @@ select {
 }
 
 .emoji-link__icon-like:active {
-  background-image: url(../img/img_voting/like_active.svg);
+  background-image: url(../../img/img__voting/like_active.svg);
 }
 .emoji-link__icon-favour:active {
-  background-image: url(../img/img_voting/favourite_active.svg);
+  background-image: url(../../img/img__voting/favourite_active.svg);
 }
 .emoji-link__icon-dislike:active {
-  background-image: url(../img/img_voting/dislike__active.svg);
+  background-image: url(../../img/img__voting/dislike__active.svg);
 }
 
 .sort-ba {
@@ -736,7 +735,7 @@ select {
   height: 40px;
   border-radius: 10px;
   background-color: var(--background-color);
-  background-image: url(../img/img__breeds/sort_ba.svg);
+  background-image: url(../../img/img__breeds/sort_ba.svg);
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 10px;
@@ -746,7 +745,7 @@ select {
   width: 36px;
   height: 36px;
   border: 2px solid #FBE0DC;
-  background-image: url(../img/img__breeds/sort_ba_hover.svg);
+  background-image: url(../../img/img__breeds/sort_ba_hover.svg);
 }
 
 .sort-ab {
@@ -755,7 +754,7 @@ select {
   height: 40px;
   border-radius: 10px;
   background-color: var(--background-color);
-  background-image: url(../img/img__breeds/sort_ab.svg);
+  background-image: url(../../img/img__breeds/sort_ab.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -764,107 +763,7 @@ select {
   width: 36px;
   height: 36px;
   border: 2px solid #FBE0DC;
-  background-image: url(../img/img__breeds/sort_ab_hover.svg);
-}
-
-.gallery__btn {
-  position: absolute;
-  left: 33%;
-  display: inline-block;
-  font-size: 16px;
-  line-height: 16px;
-  letter-spacing: 2px;
-  font-weight: 500;
-  text-transform: uppercase;
-  border-radius: 10px;
-  background-color: var(--background-color);
-  color: var(--text-color-secondary);
-  background-repeat: no-repeat;
-}
-.gallery__btn:hover {
-  color: var(--text-color-accent);
-  background-color: var(--background-color-hover);
-}
-.gallery__btn:active {
-  color: var(--text-color-active);
-  background-color: var(--background-color-active);
-}
-.gallery__btn.prev {
-  position: absolute;
-  left: 25%;
-  background-image: url("../img/img__breeds/prev_default.svg");
-  background-position: 30%;
-  background-repeat: no-repeat;
-  margin-right: 40px;
-  padding: 12px 30px 12px 56px;
-}
-.gallery__btn.prev:hover {
-  background-image: url("../img/img__breeds/prev_hover.svg");
-}
-.gallery__btn.prev:active {
-  background-image: url("../img/img__breeds/prev_activ.svg");
-}
-.gallery__btn.next {
-  position: absolute;
-  left: 50%;
-  background-image: url("../img/img__breeds/next_default.svg");
-  background-position: 66%;
-  background-repeat: no-repeat;
-  padding: 12px 56px 12px 30px;
-}
-.gallery__btn.next:hover {
-  background-image: url("../img/img__breeds/next_hover.svg");
-}
-.gallery__btn.next:active {
-  background-image: url("../img/img__breeds/next_active.svg");
-}
-
-.gallery__list,
-.gallery__list--reverse {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 140px);
-  gap: 20px;
-  grid-auto-flow: dense;
-  list-style: none;
-  margin-bottom: 20px;
-  padding: 0;
-}
-
-figure {
-  height: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-figure > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  place-items: center;
-  border-radius: 10px;
-}
-
-.gallery__list > li:first-child {
-  grid-row: span 2;
-}
-
-.gallery__list > li:nth-child(4n) {
-  grid-column: span 2;
-  grid-row: span 2;
-}
-
-.gallery__list > li:nth-child(8n) {
-  grid-row: span 2;
-}
-
-.gallery__list--reverse > li:nth-child(3n) {
-  grid-row: span 2;
-}
-
-.gallery__list--reverse > li:nth-child(4n) {
-  grid-column: span 2;
-  grid-row: span 2;
+  background-image: url(../../img/img__breeds/sort_ab_hover.svg);
 }
 
 select {
@@ -882,7 +781,7 @@ select {
   text-transform: uppercase;
   border-radius: 10px;
   background-color: var(--background-color-hover);
-  background-image: url(../img/img__gallery/upload_default.svg);
+  background-image: url(../../img/img__gallery/upload_default.svg);
   color: var(--text-color-accent);
   background-repeat: no-repeat;
   background-position: 23%;
