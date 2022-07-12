@@ -1,0 +1,64 @@
+
+:root {
+    // colors
+    --background-color:#F8F8F7;
+    --background-color-secondary:#FFFFFF;
+    --background-color-hover:#FBE0DC;
+    --background-color-active:#FF868E;
+    --text-color-main:#1D1D1D;
+    --text-color-secondary:#8C8C8C;
+    --text-color-accent:#FF868E;
+    --text-color-active:#FFFFFF;
+    --background-color-emoji-like:#97EAB9;
+    --background-color-emoji-like-light: rgba(151, 234, 185, 0.3);
+    --background-color-emoji-favour:#FF868E;
+    --background-color-emoji-favour-light: rgba(255, 134, 142, 0.3);
+    --background-color-emoji-dislike:#FFD280;
+    --background-color-emoji-dislike-light:rgba(255, 210, 128, 0.3);
+    // fonts
+    --font-main:'Jost', sans-serif;
+
+}
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+*,
+*::before,
+*::after {
+    // box-sizing:inherit; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+    background-color: var(--background-color);
+    color: var(--text-color-main);
+}
+
+h1, h2, h3 {
+    font-weight: 500;
+    margin-top: 0;
+}
+
+p {
+    margin-top: 0%;
+}
+
+a, a:visited, a:active {
+    text-decoration: none;
+}
+
+//scss 
+
+.main-page {
+    display: flex;
+}
+.container {
+    max-width:1440px;
+}
+button {
+    margin: 0;
+    padding: 0;
+}
