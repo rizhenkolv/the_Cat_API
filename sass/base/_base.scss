@@ -36,6 +36,9 @@ body {
     background-color: var(--background-color);
     color: var(--text-color-main);
 }
+select {
+    all:unset;
+}
 
 h1, h2, h3 {
     font-weight: 500;

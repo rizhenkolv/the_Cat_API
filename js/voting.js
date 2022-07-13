@@ -4,7 +4,6 @@ const style = "style=max-width: 150px;"
 
 var cat_id = ""
 
-
 //GET REQUEST
 function getCatt(){
     axios
@@ -19,10 +18,19 @@ function getCatt(){
         document.querySelector('.action__box-img').innerHTML = "<img src=" + catimage + 'class="img-random"' + ">";
         // document.getElementById('catId').innerHTML= "<h1> Id: " + cat_id + "</h1>";
         // document.querySelector('.catId').innerHTML = "<h1> Id: " + cat_id + "</h1>";
-        
+        userAction();
     })
     .catch(err => console.error(err));
-}   
+} 
+
+function userAction() {
+  const now = new Date();
+  const hours = now.getHours();
+  const mins = now.getMinutes();
+  const time =`${hours}:${mins}`;
+  console.log(time);
+  document.querySelector('.users-box__user-time').innerHTML = `${time}`;
+}
 
 // POST REQUEST
 // CUSTOM HEADERS
