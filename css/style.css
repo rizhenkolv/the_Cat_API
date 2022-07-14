@@ -235,6 +235,7 @@ button {
   padding: 15px;
 }
 .emoji-link__icon-like {
+  display: inline-block;
   width: 30px;
   height: 30px;
   align-items: center;
@@ -243,6 +244,7 @@ button {
   background-position: center;
 }
 .emoji-link__icon-favour {
+  display: inline-block;
   width: 30px;
   height: 30px;
   align-items: center;
@@ -251,6 +253,7 @@ button {
   background-position: center;
 }
 .emoji-link__icon-dislike {
+  display: inline-block;
   width: 30px;
   height: 30px;
   align-items: center;

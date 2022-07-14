@@ -1,7 +1,5 @@
-import { getCatt, castVote } from "./index";
-
-// import {castVote} from "./index.js";
-
+// import { getCatt, castVote } from "./index";
+import './index.js';
 
 // const token = 'f9aa7c7a-8d08-4d8c-a121-3f095e85a057';
 // const randomcat =  'https://api.thecatapi.com/v1/images/search'
@@ -50,8 +48,6 @@ import { getCatt, castVote } from "./index";
 //   }
 
   // EVENT LISTENER
-//document.getElementById('catId').addEventListener('click', getCatt);
-
 document.querySelector('.emoji-box__like').addEventListener('click', () => {castVote(1); getCatt()})
 document.querySelector('.emoji-box__dislike').addEventListener('click', () => {castVote(0); getCatt()})
 document.querySelector('.emoji-box__like').addEventListener('click', () => {castVote(1); userLog(1)})
@@ -61,8 +57,6 @@ window.addEventListener('load', (event) => {
     console.log(event);
     getCatt();
   });
-
-
 
 function userLog(value) {
     let text = [];

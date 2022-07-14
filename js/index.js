@@ -1,13 +1,12 @@
 
 const token = 'f9aa7c7a-8d08-4d8c-a121-3f095e85a057';
-const randomcat =  'https://api.thecatapi.com/v1/images/search'
+const randomcat =  'https://api.thecatapi.com/v1/images/search';
 // const style = "style = max-width: 150px;"
-
-var cat_id = ""
+var cat_id = "";
 
  
 // get-request
-export const getCatt = () => {
+const getCatt = () => {
     axios
     .get(randomcat, {
         timeout: 5000
@@ -22,7 +21,7 @@ export const getCatt = () => {
 }
 
 // post request
-export const castVote = (value) => {
+const castVote = (value) => {
     console.log('cast vote', value);
     console.log(`id is ${cat_id}`)
     const config = {
@@ -44,3 +43,5 @@ export const castVote = (value) => {
       .then(res => console.log(res))
       .catch(err => console.error(err));
   }
+
+  export default '*';
