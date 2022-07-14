@@ -181,6 +181,7 @@ button {
 }
 
 .search {
+  box-sizing: border-box;
   display: flex;
   margin-bottom: 10px;
 }
@@ -188,12 +189,11 @@ button {
   display: flex;
   align-items: center;
   position: relative;
-  width: 470px;
+  width: 460px;
   height: 60px;
   border: none;
   background-color: var(--background-color-secondary);
   border-radius: 20px;
-  margin-right: 10px;
 }
 .search__input {
   width: 430px;
@@ -226,11 +226,13 @@ button {
 .emoji-link {
   display: inline-block;
   background-color: var(--background-color-secondary);
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   border-radius: 20px;
   text-align: center;
   align-items: center;
+  margin-left: 10px;
+  padding: 15px;
 }
 .emoji-link__icon-like {
   width: 30px;
@@ -239,7 +241,6 @@ button {
   background-image: url(../../img/img__voting/like.svg);
   background-repeat: no-repeat;
   background-position: center;
-  margin: 15px 15px;
 }
 .emoji-link__icon-favour {
   width: 30px;
@@ -248,7 +249,6 @@ button {
   background-image: url(../../img/img__voting/favourite.svg);
   background-repeat: no-repeat;
   background-position: center;
-  margin: 15px 15px;
 }
 .emoji-link__icon-dislike {
   width: 30px;
@@ -257,7 +257,6 @@ button {
   background-image: url(../../img/img__voting/dislike.svg);
   background-repeat: no-repeat;
   background-position: center;
-  margin: 15px 15px;
 }
 
 .emoji-link + .emoji-link {

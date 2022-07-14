@@ -1,16 +1,17 @@
 .search {
+    box-sizing: border-box;
     display: flex;
     margin-bottom: 10px;
 &__inner{
     display: flex;
     align-items: center;
     position: relative;
-    width: 470px;
+    width: 460px;
     height: 60px;
     border: none;
     background-color: var(--background-color-secondary);
     border-radius:20px;
-    margin-right: 10px;
+    
 }
 &__input {
     width: 430px;
@@ -40,14 +41,16 @@
     background-image: url(../../img/img__voting/search_white.svg);
 }
 }
-.emoji-link {
+.emoji-link { 
 display:inline-block;
 background-color: var(--background-color-secondary);
-width: 60px;
-height: 60px;
+width: 30px;
+height: 30px;
 border-radius: 20px;
 text-align: center;
 align-items: center;
+margin-left: 10px;
+padding: 15px;
 
 &__icon-like {
     width: 30px;
@@ -56,7 +59,7 @@ align-items: center;
     background-image: url(../../img/img__voting/like.svg);
     background-repeat: no-repeat;
     background-position: center;
-    margin: 15px 15px;
+   
 }
 &__icon-favour {
     width: 30px;
@@ -65,7 +68,7 @@ align-items: center;
     background-image: url(../../img/img__voting/favourite.svg);
     background-repeat: no-repeat;
     background-position: center;
-    margin: 15px 15px;
+    
 }
 &__icon-dislike {
     width: 30px;
@@ -74,7 +77,7 @@ align-items: center;
     background-image: url(../../img/img__voting/dislike.svg);
     background-repeat: no-repeat;
     background-position: center;
-    margin: 15px 15px;
+   
 }
 
 }
@@ -88,6 +91,7 @@ background-color: var(--background-color-hover);
 background-color: var(--background-color-active);
 }
 .emoji-link {
+
 &__icon-like:active {
     background-image: url(../../img/img__voting/like_active.svg);
 }
