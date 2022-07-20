@@ -8,15 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/slick.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style/style.css">
     
 </head>
 <body>
     <div class="wrapper">
         <div class="container">
-            <div class="main-page">
-                <div class="main-left">
+            <div class="page">
+                <div class="page-left">
                     <div class="box">
                         <div class="logo">
                             <a href="#" class="logo__text">
@@ -85,10 +84,10 @@
                             </select>
 
                             <select name="" id="" class="action__select-limits">
-                                <option class="action__select-limit" value="" name="">Limit:5</option>
-                                <option class="action__select-limit" value="" name="">Limit:10</option>
-                                <option class="action__select-limit" value="" name="">Limit:15</option>
-                                <option class="action__select-limit" value="" name="">Limit:20</option>
+                                <option class="action__select-limit" value="5" name="">Limit:5</option>
+                                <option class="action__select-limit" value="10" name="">Limit:10</option>
+                                <option class="action__select-limit" value="15" name="">Limit:15</option>
+                                <option class="action__select-limit" value="20" name="">Limit:20</option>
                             </select>
 
                             <div class="sort-ba" ref="icon"></div>
@@ -98,60 +97,8 @@
                     
                         
                         <div class="gallery">
-                            <ul class="gallery__list">
-                                <li>
-                                    <figure>
-                                        <img src="img/img__voting/img_example.jpg" alt="" class="list-item">
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="img/img__voting/img_example.jpg" alt="" class="list-item">
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="img/img__voting/img_example.jpg" alt="" class="list-item">
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="img/img__voting/img_example.jpg" alt="" class="list-item">
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="img/img__voting/img_example.jpg" alt="" class="list-item">
-                                    </figure>
-                                </li>
-                            </ul>
-                            <ul class="gallery__list--reverse">
-                                <li>
-                                    <figure>
-                                        <img src="img/img__voting/img_example.jpg" alt="" class="list-item">
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="img/img__voting/img_example.jpg" alt="" class="list-item">
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="img/img__voting/img_example.jpg" alt="" class="list-item">
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="img/img__voting/img_example.jpg" alt="" class="list-item">
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="img/img__voting/img_example.jpg" alt="" class="list-item">
-                                    </figure>
-                                </li>
-                            </ul>  
+                            <ul class="gallery__list"></ul>     
+                            <ul class="gallery__list--reverse"></ul>  
                             <a href="#" class="gallery__btn prev">prev</a>
                             <a href="#" class="gallery__btn next">next</a> 
                         </div>
@@ -167,7 +114,10 @@
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/breeds-api.js"></script>
+    <!-- <script src="./js/main.js"></script> -->
+    <script src="./js/breedsAction.js"></script>
     
 </body>
 </html>

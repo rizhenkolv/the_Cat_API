@@ -31,14 +31,14 @@
     height: 40px;
     background-color: var(--background-color-hover);
     border-radius: 10px;
-    background-image: url(../../img/img__voting/search.svg);
+    background-image: url("../../img/img__voting/search.svg");
     background-repeat: no-repeat;
     background-position: center;
     margin-right: 10px;
 }
 &__icon:hover {
     background-color: var(--background-color-active);
-    background-image: url(../../img/img__voting/search_white.svg);
+    background-image: url("../../img/img__voting/search_white.svg");
 }
 }
 .emoji-link { 
@@ -57,7 +57,7 @@ padding: 15px;
     width: 30px;
     height: 30px;
     align-items: center;
-    background-image: url(../../img/img__voting/like.svg);
+    background-image: url("../../img/img__voting/like.svg");
     background-repeat: no-repeat;
     background-position: center;
    
@@ -67,7 +67,7 @@ padding: 15px;
     width: 30px;
     height: 30px;
     align-items: center;
-    background-image: url(../../img/img__voting/favourite.svg);
+    background-image: url("../../img/img__voting/favourite.svg");
     background-repeat: no-repeat;
     background-position: center;
     
@@ -77,7 +77,7 @@ padding: 15px;
     width: 30px;
     height: 30px;
     align-items: center;
-    background-image: url(../../img/img__voting/dislike.svg);
+    background-image: url("../../img/img__voting/dislike.svg");
     background-repeat: no-repeat;
     background-position: center;
    
@@ -96,12 +96,12 @@ background-color: var(--background-color-active);
 .emoji-link {
 
 &__icon-like:active {
-    background-image: url(../../img/img__voting/like_active.svg);
+    background-image: url("../../img/img__voting/like_active.svg");
 }
 &__icon-favour:active {
-    background-image: url(../../img/img__voting/favourite_active.svg);
+    background-image: url("../../img/img__voting/favourite_active.svg");
 }
 &__icon-dislike:active {
-    background-image: url(../../img/img__voting/dislike__active.svg);
+    background-image: url("../../img/img__voting/dislike__active.svg");
 }
 }

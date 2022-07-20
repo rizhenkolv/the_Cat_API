@@ -8,19 +8,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/slick.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style/style.css">
     
 </head>
 <body>
     <div class="wrapper">
         <div class="container">
-            <div class="main-page">
-                <div class="main-left">
+            <div class="page">
+                <div class="page-left">
                     <div class="box">
                         <div class="logo">
-                            <a href="#" class="logo__text">
-                                <img src="img/img__home/logo.svg" alt="">
+                               <a href="#" class="logo__text">
+                                <img src="./img/img__home/logo.svg" alt="">
                             </a>
                         </div>
                         <h2 class="box__header">Hi intern!</h2>
@@ -30,21 +29,21 @@
                         <div class="box__items">
                             <div class="box__item">
                                 <div class="item__voting">
-                                    <img src="/img/img__home/vote-table.png" alt="" class="item__img--voting">
+                                    <img src="./img/img__home/vote-table.png" alt="" class="item__img--voting">
                                 </div>
                                 <a href="voting.html" class="item__btn">Voting</a>
                             </div>
                             
                             <div class="box__item">
                                 <div class="item__breeds">
-                                    <img src="/img/img__home/pet-breeds.png" alt="" class="item__img--breeds">
+                                    <img src="./img/img__home/pet-breeds.png" alt="" class="item__img--breeds">
                                 </div>
                                 <a href="breeds.html" class="item__btn">Breeds</a>
                             </div>
                             
                             <div class="box__item">
                                 <div class="item__gallery">
-                                    <img src="/img/img__home/images-search.png" alt="" class="item__img--gallery">
+                                    <img src="./img/img__home/images-search.png" alt="" class="item__img--gallery">
                                 </div>  
                                 <a href="gallery.html" class="item__btn">Gallery</a>
                             </div>
@@ -54,141 +53,163 @@
                     </div>
                 </div>
         
-                <div class="action gallery">
-                    <div class="search">
-                        <div class="search__inner">
-                            <input class="search__input" placeholder="Search for breeds by name">
-                            <div class="search__icon" ref="icon"></div>
-                        </div>
-                        
-                        <div class="emoji">
-                            <a href="#" class="emoji-link">
-                                <span class="emoji-link__icon-like" ref="icon"></span>
-                            </a>
-                            <a href="#" class="emoji-link">
-                                <span class="emoji-link__icon-favour" ref="icon"></span>
-                            </a>
-                            <a href="#" class="emoji-link">
-                                <span class="emoji-link__icon-dislike" ref="icon"></span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="action__box breeds">
-                        <div class="container-actions">
-                            <a href="voting.html" class="action__btn-back"></a>
-                            <a href="#" class="action__btn">gallery</a>
-                            <a href="#" class="action__upload">upload</a>
-                        </div>    
-                            <div class="sort-box">
-                                <div class="sort-box__item">
-                                    <label for="" class="sort-box__label">order</label>
-                                    <select name="" id="" class="sort-box__select">
-                                        <option value="" class="sort-box__order">Random</option>
-                                        <option value="" class="sort-box__order">Desc</option>
-                                        <option value="" class="sort-box__order">Asc</option>
-                                    </select>
-                                </div>
-                                <div class="sort-box__item">
-                                    <label for="" class="sort-box__label">breed</label>
-                                    <select name="" id="" class="sort-box__select">
-                                        <option value="" class="sort-box__order">None</option>
-                                        <option value="" class="sort-box__order">Abyssinian</option>
-                                        <option value="" class="sort-box__order">Agean</option>
-                                        <option value="" class="sort-box__order">American Shorthair</option>
-                                    </select>
-                                </div> 
-                                <div class="sort-box__item">
-                                    <label for="" class="sort-box__label">type</label>
-                                    <select name="" id="" class="sort-box__select">
-                                        <option value="" class="sort-box__order">All</option>
-                                        <option value="" class="sort-box__order">Static</option>
-                                        <option value="" class="sort-box__order">Animated</option>
-                                    </select>
-                                </div> 
-                                <div class="sort-box__item">
-                                    <label for="" class="sort-box__label">limit</label>
-                                    <select name="" id="" class="sort-box__select">
-                                        <option value="" class="sort-box__order">5 items per page</option>
-                                        <option value="" class="sort-box__order">10 items per page</option>
-                                        <option value="" class="sort-box__order">15 items per page</option>
-                                        <option value="" class="sort-box__order">20 items per page</option>
-                                    </select>
-                                </div> 
-
+                <div class="page-right">
+                    <div class="action gallery">
+                        <div class="search">
+                            <div class="search__inner">
+                                <input class="search__input" placeholder="Search for breeds by name">
+                                <div class="search__icon" ref="icon"></div>
                             </div>
-                    
-                        <div class="gallery">
-                            <ul class="gallery__list">
-                                <li>
-                                    <figure>
-                                        <img src="img/img__voting/img_example.jpg" alt="" class="list-item">
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="img/img__voting/img_example.jpg" alt="" class="list-item">
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="img/img__voting/img_example.jpg" alt="" class="list-item">
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="img/img__voting/img_example.jpg" alt="" class="list-item">
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="img/img__voting/img_example.jpg" alt="" class="list-item">
-                                    </figure>
-                                </li>
-                            </ul>
-                            <ul class="gallery__list--reverse">
-                                <li>
-                                    <figure>
-                                        <img src="img/img__voting/img_example.jpg" alt="" class="list-item">
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="img/img__voting/img_example.jpg" alt="" class="list-item">
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="img/img__voting/img_example.jpg" alt="" class="list-item">
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="img/img__voting/img_example.jpg" alt="" class="list-item">
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="img/img__voting/img_example.jpg" alt="" class="list-item">
-                                    </figure>
-                                </li>
-                            </ul>  
-                            <a href="#" class="gallery__btn prev">prev</a>
-                            <a href="#" class="gallery__btn next">next</a> 
+                            
+                            <div class="emoji">
+                                <a href="#" class="emoji-link">
+                                    <span class="emoji-link__icon-like" ref="icon"></span>
+                                </a>
+                                <a href="#" class="emoji-link">
+                                    <span class="emoji-link__icon-favour" ref="icon"></span>
+                                </a>
+                                <a href="#" class="emoji-link">
+                                    <span class="emoji-link__icon-dislike" ref="icon"></span>
+                                </a>
+                            </div>
                         </div>
 
+                        <div class="action__box breeds">
+                            <div class="container-actions">
+                                <a href="voting.html" class="action__btn-back"></a>
+                                <a href="#" class="action__btn">gallery</a>
+                                <a href="#" class="action__upload">upload</a>
+                            </div>    
+                                <div class="sort-box">
+                                    <div class="sort-box__item">
+                                        <label for="" class="sort-box__label">order</label>
+                                        <select name="" id="" class="sort-box__select">
+                                            <option value="" class="sort-box__order">Random</option>
+                                            <option value="" class="sort-box__order">Desc</option>
+                                            <option value="" class="sort-box__order">Asc</option>
+                                        </select>
+                                    </div>
+                                    <div class="sort-box__item">
+                                        <label for="" class="sort-box__label">breed</label>
+                                        <select name="" id="" class="sort-box__select">
+                                            <option value="" class="sort-box__order">None</option>
+                                            <option value="" class="sort-box__order">Abyssinian</option>
+                                            <option value="" class="sort-box__order">Agean</option>
+                                            <option value="" class="sort-box__order">American Shorthair</option>
+                                        </select>
+                                    </div> 
+                                    <div class="sort-box__item">
+                                        <label for="" class="sort-box__label">type</label>
+                                        <select name="" id="" class="sort-box__select">
+                                            <option value="" class="sort-box__order">All</option>
+                                            <option value="" class="sort-box__order">Static</option>
+                                            <option value="" class="sort-box__order">Animated</option>
+                                        </select>
+                                    </div> 
+                                    <div class="sort-box__item">
+                                        <label for="" class="sort-box__label">limit</label>
+                                        <select name="" id="" class="sort-box__select">
+                                            <option value="" class="sort-box__order">5 items per page</option>
+                                            <option value="" class="sort-box__order">10 items per page</option>
+                                            <option value="" class="sort-box__order">15 items per page</option>
+                                            <option value="" class="sort-box__order">20 items per page</option>
+                                        </select>
+                                    </div> 
+
+                                </div>
                         
+                            <div class="gallery">
+                                <ul class="gallery__list">
+                                    <li>
+                                        <figure>
+                                            <img src="./img/img__voting/img_example.jpg" alt="" class="list-item">
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./img/img__voting/img_example.jpg" alt="" class="list-item">
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./img/img__voting/img_example.jpg" alt="" class="list-item">
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./img/img__voting/img_example.jpg" alt="" class="list-item">
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./img/img__voting/img_example.jpg" alt="" class="list-item">
+                                        </figure>
+                                    </li>
+                                </ul>
+                                <ul class="gallery__list--reverse">
+                                    <li>
+                                        <figure>
+                                            <img src="./img/img__voting/img_example.jpg" alt="" class="list-item">
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./img/img__voting/img_example.jpg" alt="" class="list-item">
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./img/img__voting/img_example.jpg" alt="" class="list-item">
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./img/img__voting/img_example.jpg" alt="" class="list-item">
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <img src="./img/img__voting/img_example.jpg" alt="" class="list-item">
+                                        </figure>
+                                    </li>
+                                </ul>  
+                                <a href="#" class="gallery__btn prev">prev</a>
+                                <a href="#" class="gallery__btn next">next</a> 
+                            </div>
+
+                            
+                            
+                        </div>
+
+                    </div>
+            
+                    
+                </div>
+                <div class="modal">
+                        <div class="modal-content">
+                        <span class="modal-content__close"></span>
+                        <h2 class="modal-content__header">Upload a .jpg or .png Cat Image</h2>
+                        <p class="modal-content__text">Any uploads must comply with the <a href="https://thecatapi.com/privacy" class=""> upload guidelines</a> or face deletion.</p>
+                        <div class="modal-content__visual">
+                            <div class="modal-content__uploadFoto">
+                                <!-- <img src="./img/img__voting/img_example.jpg" alt=""> -->
+                            </div>
+                            <p class="modal-content__instruction"><b>Drag here</b> your file or <b>Click here</b> to upload</p>
+                        </div>
+                      
+                        <p class="modal-content__result">No file selected</p>
+                        </div>
                         
                     </div>
-
-                </div>
-
             </div>   
         </div>
     </div>
     
  
-    <script src="/js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="module" src="./js/index.js"></script>
+    <!-- <script type="module" src="./js/modal.js"></script> -->
+    <script type="module" src="./js/main.js"></script>
     
 </body>
 </html>

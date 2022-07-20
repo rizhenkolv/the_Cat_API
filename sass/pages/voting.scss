@@ -37,7 +37,7 @@
         width: 80px;
         height: 80px;
         background-color: var(--background-color-emoji-like);
-        background-image: url(../../img/img__voting/like_active.svg);
+        background-image: url("../../img/img__voting/like_active.svg");
         background-repeat: no-repeat;
         background-position: center;
         border:none;
@@ -46,26 +46,26 @@
     }
     &__like:hover {
         background-color: var(--background-color-emoji-like-light);
-        background-image: url(../../img/img__voting/like.svg);
+        background-image: url("../../img/img__voting/like.svg");
     }
     &__favourite {
         width: 80px;
         height: 80px;
         background-color: var(--background-color-emoji-favour);
-        background-image: url(../../img/img__voting/favourite_active.svg);
+        background-image: url("../../img/img__voting/favourite_active.svg");
         background-repeat: no-repeat;
         background-position: center;
         border:none;
     }
     &__favourite:hover {
         background-color: var(--background-color-emoji-favour-light);
-        background-image: url(../../img/img__voting/favourite.svg);
+        background-image: url("../../img/img__voting/favourite.svg");
     }
     &__dislike {
         width: 80px;
         height: 80px;
         background-color: var(--background-color-emoji-dislike);
-        background-image: url(../../img/img__voting/dislike__active.svg);
+        background-image: url("../../img/img__voting/dislike__active.svg");
         background-repeat: no-repeat;
         background-position: center;
         border:none;
@@ -74,7 +74,7 @@
     }
     &__dislike:hover {
         background-color: var(--background-color-emoji-dislike-light);
-        background-image: url(../../img/img__voting/dislike.svg);
+        background-image: url("../../img/img__voting/dislike.svg");
     }
 }
 .users-box {

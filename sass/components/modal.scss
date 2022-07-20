@@ -1,0 +1,103 @@
+.modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index:1;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    padding: 30px 30px 30px;
+    background-color: rgba(29, 29, 29, 0.6);
+}
+
+.modal-content {
+    margin-left: 49%;
+    width: 680px;
+    height: 840px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--background-color);
+    box-shadow: 0 5px 8px 0 rgba(29, 29, 29, 0.2),0 7px 20px 0 rgba(29, 29, 29, 0.2);
+    &__close {
+        float:right;
+        background-color: var(--background-color-secondary);
+        background-image: url('../../img/img__gallery/close_red.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 11.5px;
+        border-radius: 10px;
+        width:17px;
+        height: 17px;
+        align-items: center;
+        text-align: center;
+        &:hover {
+        cursor: pointer;
+        background-color: var(--background-color-active);
+        background-image: url('../../img/img__gallery/close_white.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        }
+    }
+    &__header {
+        margin: 100px 89px 10px 75px;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 52px;
+    }
+    &__text{
+        margin-bottom: 40px;
+        margin-left: 56px;
+        margin-right: 32px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        color:var(--text-color-secondary);
+        & > a{
+            color: rgb(249, 93, 93);
+        }
+    }
+    &__visual {
+        position: relative;
+        width: 554px;
+        height: 320px;
+        padding: 20px 50px;
+        background-color: var(--background-color-secondary);
+        border: 2px dashed var(--background-color-hover);
+        border-radius: 20px;
+        background-image: url('../../img/img__gallery/img_default.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 20px;
+    }
+    
+    &__instruction{
+        // position: relative;
+        // z-index: 100;
+        margin-top: 25%;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        color:var(--text-color-secondary);
+        
+    }
+    &__uploadFoto {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        & > img{
+            z-index:10;
+            width:558px;
+            // max-height: 280px;
+        }
+    }
+    &__result {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        color:var(--text-color-secondary);
+    }
+    
+
+}

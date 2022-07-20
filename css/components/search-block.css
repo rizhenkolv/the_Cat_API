@@ -1,0 +1,105 @@
+.search {
+  box-sizing: border-box;
+  display: flex;
+  margin-bottom: 10px;
+}
+.search__inner {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 460px;
+  height: 60px;
+  border: none;
+  background-color: var(--background-color-secondary);
+  border-radius: 20px;
+}
+.search__input {
+  width: 430px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  border: none;
+  background-color: var(--background-color-secondary);
+  border-radius: 20px;
+}
+.search__input::placeholder {
+  color: var(--text-color-secondary);
+  font-size: 20px;
+}
+.search__icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--background-color-hover);
+  border-radius: 10px;
+  background-image: url("../../img/img__voting/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+}
+.search__icon:hover {
+  background-color: var(--background-color-active);
+  background-image: url("../../img/img__voting/search_white.svg");
+}
+
+.emoji-link {
+  display: inline-block;
+  background-color: var(--background-color-secondary);
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  text-align: center;
+  align-items: center;
+  margin-left: 10px;
+  padding: 15px;
+}
+.emoji-link__icon-like {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  background-image: url("../../img/img__voting/like.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.emoji-link__icon-favour {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  background-image: url("../../img/img__voting/favourite.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.emoji-link__icon-dislike {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  background-image: url("../../img/img__voting/dislike.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.emoji-link + .emoji-link {
+  margin-left: 10px;
+}
+
+.emoji-link:hover {
+  background-color: var(--background-color-hover);
+}
+
+.emoji-link:active {
+  background-color: var(--background-color-active);
+}
+
+.emoji-link__icon-like:active {
+  background-image: url("../../img/img__voting/like_active.svg");
+}
+.emoji-link__icon-favour:active {
+  background-image: url("../../img/img__voting/favourite_active.svg");
+}
+.emoji-link__icon-dislike:active {
+  background-image: url("../../img/img__voting/dislike__active.svg");
+}
+
+/*# sourceMappingURL=search-block.css.map */

@@ -13,11 +13,10 @@ function getCatt(){
     .then(res => {
         catimage = JSON.stringify(res.data[0].url);
         cat_id = JSON.stringify(res.data[0].id);
-      
-        // document.getElementById('catImage').innerHTML = "<img src=" + catimage + ">";
+         let breeds = res.data;
+        
         document.querySelector('.action__box-img').innerHTML = "<img src=" + catimage + 'class="img-random"' + ">";
-        // document.getElementById('catId').innerHTML= "<h1> Id: " + cat_id + "</h1>";
-        // document.querySelector('.catId').innerHTML = "<h1> Id: " + cat_id + "</h1>";
+        
         userAction();
     })
     .catch(err => console.error(err));

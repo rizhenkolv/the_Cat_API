@@ -1,7 +1,7 @@
 const token = 'f9aa7c7a-8d08-4d8c-a121-3f095e85a057';
 const cat =  'https://api.thecatapi.com/v1/breeds';
 const selectBreeds = document.querySelector('.action__select-breeds');
-function getNameBreeds(){
+const getNameBreeds = () => {
         axios
         .get(cat, {
             timeout: 5000
@@ -9,7 +9,7 @@ function getNameBreeds(){
         .then(res => {
             // catName = JSON.stringify(res.data[0].name);
             // cat_id = JSON.stringify(res.data[0].id);
-            // console.log(res);
+            console.log(res);
             let nameList = [];
             res.data.forEach(function(item) {
                 nameList.push(item.name);
@@ -19,11 +19,8 @@ function getNameBreeds(){
                 createOption.innerHTML = `${item.name}`;
             })
             console.log(nameList);
-           
-    
         })
         .catch(err => console.error(err));
     } 
-
 
     getNameBreeds();

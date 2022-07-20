@@ -1,0 +1,165 @@
+.container-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.action__btn {
+  display: inline-block;
+  width: 86px;
+  height: 30px;
+  background-color: var(--background-color-active);
+  color: var(--text-color-active);
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  border-radius: 10px;
+  border: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px 30px;
+}
+.action__btn-back {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: var(--background-color-hover);
+  background-image: url(../../img/img__voting/arrow_back.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  border: none;
+}
+.action__btn-back:hover {
+  background-color: var(--background-color-active);
+  background-image: url(../../img/img__voting/arrow_back-hover.svg);
+}
+.action__box-img {
+  position: relative;
+}
+.action__select {
+  position: relative;
+}
+.action__select-breeds {
+  width: 226px;
+  height: 40px;
+  background-color: var(--background-color);
+  border: none;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-color-secondary);
+  border-radius: 10px;
+  align-items: center;
+  padding-left: 10px;
+  margin-right: 10px;
+}
+.action__select-breeds:hover {
+  border: 2px solid #FBE0DC;
+}
+.action__select-limits {
+  width: 91px;
+  height: 40px;
+  background-color: var(--background-color);
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-color-secondary);
+  align-items: center;
+  padding-left: 10px;
+  margin-right: 10px;
+}
+
+.sort-ba {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: var(--background-color);
+  background-image: url(../../img/img__breeds/sort_ba.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+}
+
+.sort-ba:hover {
+  width: 36px;
+  height: 36px;
+  border: 2px solid #FBE0DC;
+  background-image: url(../../img/img__breeds/sort_ba_hover.svg);
+}
+
+.sort-ab {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: var(--background-color);
+  background-image: url(../../img/img__breeds/sort_ab.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sort-ab:hover {
+  width: 36px;
+  height: 36px;
+  border: 2px solid #FBE0DC;
+  background-image: url(../../img/img__breeds/sort_ab_hover.svg);
+}
+
+.action__upload {
+  position: absolute;
+  right: 20px;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background-color: var(--background-color-hover);
+  background-image: url(../../img/img__gallery/upload_default.svg);
+  color: var(--text-color-accent);
+  background-repeat: no-repeat;
+  background-position: 23%;
+  padding: 12px 30px 12px 56px;
+}
+.action__upload:hover {
+  background-color: var(--background-color-active);
+  background-image: url(../img/img__gallery/upload__hover.svg);
+  color: var(--text-color-active);
+}
+
+.sort-box {
+  margin-top: 25px;
+  background-color: var(--background-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 8px;
+  column-gap: 20px;
+  padding: 10px 20px 20px;
+  border-radius: 20px;
+}
+.sort-box__select {
+  background-color: var(--background-color-secondary);
+  width: 280px;
+  height: 24px;
+  padding-left: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 10px;
+}
+.sort-box__label {
+  font-size: 10px;
+  line-height: 18px;
+  color: var(--text-color-secondary);
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+
+/*# sourceMappingURL=option-panel.css.map */
