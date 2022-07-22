@@ -1,6 +1,10 @@
-import modals from './modal.js';
+import {modals, drop} from './modal.js';
+
+
+
 
 
 window.addEventListener('DOMContentLoaded', () => {
     modals();
+    drop();
 })
