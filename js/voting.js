@@ -69,25 +69,4 @@ window.addEventListener('load', (event) => {
     getCatt();
   });
 
-// EXAMPLE
-// var data = JSON.stringify({
-//     "image_id": "asf2",
-//     "sub_id": "my-user-1234",
-//     "value": 1
-//   });
-  
-//   var xhr = new XMLHttpRequest();
-//   xhr.withCredentials = true;
-  
-//   xhr.addEventListener("readystatechange", function () {
-//     if (this.readyState === this.DONE) {
-//       console.log(this.responseText);
-//     }
-//   });
-  
-//   xhr.open("POST", "https://api.thecatapi.com/v1/votes");
-//   xhr.setRequestHeader("content-type", "application/json");
-//   xhr.setRequestHeader("x-api-key", "DEMO-API-KEY");
-  
-//   xhr.send(data);
 

@@ -1,5 +1,7 @@
- import { getCatt, castVote } from "./index.js";
+ import { getCatt, castVote } from './index.js';
  import {cat_id} from "./index.js";
+//  getCatt = require('./index');
+//  castVote = require('./index');
 
  var catimage;
 

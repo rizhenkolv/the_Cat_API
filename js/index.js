@@ -2,7 +2,7 @@
 const token = 'f9aa7c7a-8d08-4d8c-a121-3f095e85a057';
 const randomcat =  'https://api.thecatapi.com/v1/images/search';
 var catimage;
-var cat_id = "";
+export var cat_id = "";
  
 // get-request
 export const getCatt = () => {
@@ -44,4 +44,3 @@ export const castVote = (value) => {
       .catch(err => console.error(err));
   }
 
-// export default "*";
