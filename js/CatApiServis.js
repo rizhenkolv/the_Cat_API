@@ -1,4 +1,4 @@
-
+// не применяется, нужно установить axios
 
 const token = 'f9aa7c7a-8d08-4d8c-a121-3f095e85a057';
 const randomcat =  'https://api.thecatapi.com/v1/images/search';
